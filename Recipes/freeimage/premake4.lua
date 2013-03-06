@@ -684,7 +684,7 @@ newaction
         os.copyfile("source/freeimage.h", prefix .. "/inc/freeimage/freeimage.h");
         os.copyfile("wrapper/freeimageplus/freeimageplus.h", prefix .. "/inc/freeimage/freeimageplus.h");
       
-        -- Library files created in dist directory on build
+        -- Library files created in dist directory
         files = os.matchfiles("lib/x32/debug/*.*");
         for k, f in pairs(files) do
             os.copyfile(f, prefix .. "/lib/x32/debug/" .. path.getname(f));

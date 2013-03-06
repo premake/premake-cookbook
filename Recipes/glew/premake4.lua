@@ -89,7 +89,7 @@ newaction
             os.copyfile(f, prefix .. "/inc/gl/" .. path.getname(f));
         end
           
-        -- Library files created in dist directory on build
+        -- Library files created in dist directory
         files = os.matchfiles( "lib/x32/debug/*.*");
         for k, f in pairs(files) do
             os.copyfile(f, prefix .. "/lib/x32/debug/" .. path.getname(f));
